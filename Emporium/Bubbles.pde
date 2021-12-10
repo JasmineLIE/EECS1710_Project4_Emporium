@@ -23,6 +23,7 @@ class Bubbles {
   }
 
   void update() {
+    //designate different colours
     col1 = color(60 + random(-50, 100), 18+ random(-10, 10), 32+ random(-10, 10));
     col2 = color(88 + random(-50, 100), 45+ random(-10, 10), 45+ random(-10, 10));
     col3 = color(29 + random(-50, 100), 48+ random(-10, 10), 62+ random(-10, 10));
@@ -35,6 +36,7 @@ class Bubbles {
   void display() {
 
 
+//set up the bubbles of each button seperately.  Each section has a dedicated colour scheme and lifespan depends on the music of each button
 
     if (position.x >=0 && position.x <= 300) {
       lifespan = intensity1 * 2; 
@@ -63,7 +65,7 @@ class Bubbles {
     }
   }
 
-  boolean isDead() {
+  boolean isDead() { //ellipses less than 5 lifespan are deleted
     if (lifespan < 5) {
       return true;
     } else {
