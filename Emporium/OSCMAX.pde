@@ -136,7 +136,7 @@ void oscSend9() {
   oscP5.send(myMessage, remoteLoc9);
 }
 
-
+//this receives the intensity from the usic going through MAX, allows things to move on the beat
 public void setAmp1(float amp) {
   intensity1 = 20 + amp * 200;
 }
