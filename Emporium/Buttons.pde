@@ -1,5 +1,6 @@
 //Perlin Noise: https://processing.org/examples/noise1d.html
 
+//determines what button is applicable for a frequency change
 boolean freqSelect1 = false;
 boolean freqSelect2 = false;
 boolean freqSelect3 = false;
@@ -161,6 +162,8 @@ class Buttons {
     fill(255);
     textAlign(CENTER, CENTER);
     text(label, posX, posY);
+
+//display the text 'Toggled!' above their designated buttons when they are toggled
 
     if (freqSelect1) {
       text("Toggled!", 200, height/2-150);
