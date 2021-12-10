@@ -19,12 +19,12 @@ class Stroke {
   void update() {
     if (millis() > timestamp + lifetime) {
       alive = false;
-      
+
       if (!alive) {
-    mouseLoc = 1;
-    oscSendData5 = mouseLoc; 
-    oscSend5();
-}
+        mouseLoc = 1;
+        oscSendData5 = mouseLoc; 
+        oscSend5();
+      }
     }
   }
 
