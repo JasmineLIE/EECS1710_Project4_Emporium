@@ -49,6 +49,7 @@ void setup() {
   layout.loadImages();
 //load in art background and elements
 
+
 //set up strokes to be drawn when user interacts with water
   strokes = new ArrayList<Stroke>();
 
