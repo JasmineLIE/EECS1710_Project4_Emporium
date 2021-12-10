@@ -41,6 +41,7 @@ class Buttons {
   }
 
   void checkButton() {
+//buttons are recognized by their type, port 1-4.  When the button is pressed, the function looks at the port and depending on which kind, sends a bang to the connected udpreceive
 
     if (buttonType == "port1") {
       if (hitDetect(mouseX, mouseY, 0, 0, posX, posY, sizeXY, sizeXY)) {
@@ -93,7 +94,7 @@ class Buttons {
           hovered=true;
           clicked=true;
           toggleSwitch = !toggleSwitch;
-          oscSendData2 = 3;
+          oscSendData2 = 1;
           oscSend3();
         }
       } else {
@@ -154,7 +155,7 @@ class Buttons {
       ellipse(posX, posY, sizeXY+intensity4, sizeXY+intensity4);
     }
 
-
+//button size change with the music, uses port names again to identify and categorize the buttons
 
     textSize(30);
     fill(255);
@@ -174,6 +175,7 @@ class Buttons {
       text("Toggled!", 950, height/2-150);
     }
   }
+//to let users know they've toggled a button for frequency application
 
   boolean hitDetect(float x1, float y1, float w1, float h1, float x2, float y2, float w2, float h2) {
     w1 /= 2;
