@@ -52,14 +52,12 @@ void oscSetup() {
   remoteLoc2 = new NetAddress(ipNumber, sendPort2);
   remoteLoc3 = new NetAddress(ipNumber, sendPort3);
   remoteLoc4 = new NetAddress(ipNumber, sendPort4);
-  
+
   remoteLoc5 = new NetAddress(ipNumber, sendPort5);
   remoteLoc6 = new NetAddress(ipNumber, sendPort6);
   remoteLoc7 = new NetAddress(ipNumber, sendPort7);
   remoteLoc8 = new NetAddress(ipNumber, sendPort8);
- remoteLoc9 = new NetAddress(ipNumber, sendPort9);
-  
- 
+  remoteLoc9 = new NetAddress(ipNumber, sendPort9);
 }
 
 //2.  This function receives OSC.  It runs automatically; no need to call it in your code.
