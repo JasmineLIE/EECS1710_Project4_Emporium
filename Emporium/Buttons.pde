@@ -1,9 +1,9 @@
 //Perlin Noise: https://processing.org/examples/noise1d.html
 
-  boolean freqSelect1 = false;
-  boolean freqSelect2 = false;
-  boolean freqSelect3 = false;
-  boolean freqSelect4 = false;
+boolean freqSelect1 = false;
+boolean freqSelect2 = false;
+boolean freqSelect3 = false;
+boolean freqSelect4 = false;
 
 class Buttons {
   float posX, posY, sizeXY;
@@ -139,7 +139,7 @@ class Buttons {
     } else if (!hovered && !clicked) {
       nowColor = offColor;
     } 
-  
+
 
 
     fill(nowColor);
@@ -160,18 +160,18 @@ class Buttons {
     fill(255);
     textAlign(CENTER, CENTER);
     text(label, posX, posY);
-    
+
     if (freqSelect1) {
-    text("Toggled!", 200, height/2-150);
+      text("Toggled!", 200, height/2-150);
     }
-     if (freqSelect2) {
-    text("Toggled!", 450, height/2-150);
+    if (freqSelect2) {
+      text("Toggled!", 450, height/2-150);
     }
-     if (freqSelect3) {
-    text("Toggled!", 700, height/2-150);
+    if (freqSelect3) {
+      text("Toggled!", 700, height/2-150);
     }
-     if (freqSelect4) {
-    text("Toggled!", 950, height/2-150);
+    if (freqSelect4) {
+      text("Toggled!", 950, height/2-150);
     }
   }
 
