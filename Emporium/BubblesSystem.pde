@@ -5,6 +5,7 @@ class BubblesSystem {
 
   BubblesSystem(PVector position) {
     origin = position.copy();
+   
     bubbles = new ArrayList<Bubbles>();
   }
 
@@ -21,5 +22,7 @@ class BubblesSystem {
         bubbles.remove(i);
       }
     }
+    
+    
   }
 }
