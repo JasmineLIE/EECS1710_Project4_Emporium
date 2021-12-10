@@ -34,6 +34,7 @@ class Layout {
     }
 
 
+//PGraphic so only the water is affected by the shader and the stroke that takes place
 
     pg.beginDraw();
     pg.image(water, 0, 0, pg.width, pg.height);
