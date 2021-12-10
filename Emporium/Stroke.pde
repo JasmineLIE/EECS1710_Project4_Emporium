@@ -17,13 +17,13 @@ class Stroke {
   }
 
   void update() {
-    if (millis() > timestamp + lifetime) {
+    if (millis() > timestamp + lifetime) { //if the stroke has existed for longer than 1000, which is calculated by millis the moment the mouse is released, then reset
       alive = false;
 
       if (!alive) {
         mouseLoc = 1;
         oscSendData5 = mouseLoc; 
-        oscSend5();
+        oscSend5(); //reset the freq to 1
       }
     }
   }
