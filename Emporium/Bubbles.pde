@@ -28,8 +28,10 @@ class Bubbles {
     col2 = color(88 + random(-50, 100), 45+ random(-10, 10), 45+ random(-10, 10));
     col3 = color(29 + random(-50, 100), 48+ random(-10, 10), 62+ random(-10, 10));
     col4 = color(22+ random(-50, 100), 111+ random(-10, 10), 84+ random(-10, 10));
-    velocity.add(acceleration);
-    position.add(velocity);
+    
+    
+    velocity.add(acceleration); //apply acceleration values to velocity, which shoots the bubbles out in different directions
+    position.add(velocity);  //update position using velocity.  Position is what is ultimately displayed 
 
     lifespan -= 0.2;
   }
@@ -41,25 +43,25 @@ class Bubbles {
     if (position.x >=0 && position.x <= 300) {
       lifespan = intensity1 * 2; 
       fill(col1, lifespan);
-
       noStroke();
       ellipse(position.x, position.y, random(5, 20), random(5, 20));
+      
+      
     } else if (position.x >= 300 && position.x <= 600) {
       lifespan = intensity2 * 2; 
       fill(col2, lifespan);
-
       noStroke();
       ellipse(position.x, position.y, random(5, 20), random(5, 20));
+      
     } else if ( position.x >=500 && position.x <= 800) {
       lifespan = intensity3 * 2; 
       fill(col3, lifespan);
-
       noStroke();
       ellipse(position.x, position.y, random(5, 20), random(5, 20));
+      
     } else if ( position.x >=800 && position.x <= 1100) {
       lifespan = intensity4 * 2; 
       fill(col4, lifespan);
-
       noStroke();
       ellipse(position.x, position.y, random(5, 20), random(5, 20));
     }
